@@ -6,7 +6,7 @@ set(CMAKE_EXE_LINKER_FLAGS "-W -Wall -static ")
 set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS} -D __ARM_LINUX__ -DPERIPHERY_GPIO_CDEV_SUPPORT=1")
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -D __ARM_LINUX__ -DPERIPHERY_GPIO_CDEV_SUPPORT=1")
 
-set(U8G2PATH ${CMAKE_SOURCE_DIR}/lib/u8g2-arm-linux/)
+set(U8G2PATH ${CMAKE_SOURCE_DIR}/../../lib/u8g2-arm-linux/)
 message("U8g2 path" ${U8G2PATH})
 include_directories(${U8G2PATH}/cppsrc)
 include_directories(${U8G2PATH}/csrc)
